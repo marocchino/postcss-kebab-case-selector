@@ -7,14 +7,30 @@
 [ci]:      https://travis-ci.org/marocchino/postcss-kebab-case-selector
 
 ```css
-.foo {
-    /* Input example */
+/* Input example */
+.foo--bar {
+}
+.FooBar {
+}
+.fooBar {
+}
+.foo--bar_01 {
+}
+.foo-bar-01 {
 }
 ```
 
 ```css
-.foo {
-  /* Output example */
+/* Output example */
+.foo-bar {
+}
+.foo-bar {
+}
+.foo-bar {
+}
+.foo-bar01 {
+}
+.foo-bar01 {
 }
 ```
 
