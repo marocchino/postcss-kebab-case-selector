@@ -1,6 +1,6 @@
 {
   "name": "postcss-kebab-case-selector",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "PostCSS plugin that normalize all css name to kebab case",
   "keywords": [
     "postcss",

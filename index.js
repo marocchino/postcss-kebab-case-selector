@@ -6,7 +6,7 @@ module.exports = postcss.plugin('postcss-kebab-case-selector', function (opts) {
     return root => {
         root.walkRules(rule => {
             rule.selector = rule.selector
-                .replace(/[A-Z]/g, c => `-${c.toLowerCase()}`)
+                .replace(/[A-Z]+/g, c => `-${c.toLowerCase()}`)
                 .replace(/_/g, '-')
                 .replace(/-+/g, '-')
                 .replace(/(\.|#)-/g, '$1')

@@ -10,23 +10,26 @@ function run(input, output, opts) {
         });
 }
 
-it('change CamelCase', () => {
-    return run('.CamelCase { }', '.camel-case { }', { });
+it('change PascalCase', () => {
+    return run('.PascalCase { }', '.pascal-case { }', { });
 });
 it('change camelCase', () => {
     return run('.camelCase { }', '.camel-case { }', { });
 });
-it('change snake_case', () => {
+it('change snake_case_01', () => {
     return run('.snake_case_01 { }', '.snake-case01 { }', { });
 });
-it('change snake_case', () => {
+it('change snake_case-01', () => {
     return run('.snake_case-01 { }', '.snake-case01 { }', { });
 });
-it('change snake_case', () => {
+it('change snake_case01', () => {
     return run('.snake_case01 { }', '.snake-case01 { }', { });
 });
 it('change snake_Case', () => {
     return run('.snake_Case { }', '.snake-case { }', { });
+});
+it('change word_ABBR', () => {
+    return run('.word_ABBR { }', '.word-abbr { }', { });
 });
 it('change kebab--case', () => {
     return run('#kebab--case { }', '#kebab-case { }', { });
