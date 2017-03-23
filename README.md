@@ -40,4 +40,10 @@
 postcss([ require('postcss-kebab-case-selector') ])
 ```
 
+### from CLI
+
+```
+postcss --use postcss-kebab-case-selector --no-map --replace path/to/convert/*
+```
+
 See [PostCSS] docs for examples for your environment.
